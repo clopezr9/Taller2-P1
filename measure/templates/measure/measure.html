@@ -23,7 +23,13 @@
     </form>
     {% for measure in measures %}
         <ul class="list-group">
-             <li class="list-group-item">{{measure}} = </li>
+          <li class="list-group-item">
+	    Codigo: {{measure.codigo}} 
+            Latitud: {{measure.latitud}}  
+            Longitud: {{measure.longitud}}  
+            Producto: {{measure.producto}}  
+            Area: {{measure.area}}
+	  </li>
         </ul>
     {% endfor %}
 </div>
