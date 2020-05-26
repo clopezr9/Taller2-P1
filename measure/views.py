@@ -25,7 +25,7 @@ def measure(request):
             # Convierte la respuesta en JSON
             measure_json = response.json()
             
-    response = requests.get('http://127.0.0.1:8000/temphum/')
+    response = requests.get('https://pi1-eafit-clopezr9.azurewebsites.net/')
     measures = response.json()
     # Rederiza la respuesta en el template measure
     return render(request, "measure/measure.html", {'measures': measures})
