@@ -21,7 +21,7 @@ def measure(request):
                     'producto': producto,
                     'area':area}
             
-            response = requests.post('http://127.0.0.1:8000/temphum/', args)
+            response = requests.post('https://pi1-eafit-clopezr9.azurewebsites.net/', args)
             # Convierte la respuesta en JSON
             measure_json = response.json()
             
